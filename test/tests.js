@@ -41,3 +41,12 @@ describe("Passing Tests", function(){
 		});
 	});
 });
+
+describe("Failing Tests", function(){
+	describe("#multiplyByZero()" function(){
+		it("should return as 0", function(){
+			var results = myTests.multiplyByZero(100);
+			expect(results).to.equal(0);
+		});
+	});
+});
