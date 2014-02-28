@@ -43,10 +43,17 @@ describe("Passing Tests", function(){
 });
 
 describe("Failing Tests", function(){
-	describe("#multiplyByZero()" function(){
+	describe("#multiplyByZero()", function(){
 		it("should return as 0", function(){
 			var results = myTests.multiplyByZero(100);
 			expect(results).to.equal(0);
+		});
+	});
+
+	describe("#firstLetter()", function(){
+		it("should return the first letter", function(){
+			var results = myTests.firstLetter("Hello");
+			expect(results).to.equal("H");
 		});
 	});
 });
