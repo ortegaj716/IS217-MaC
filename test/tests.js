@@ -56,4 +56,11 @@ describe("Failing Tests", function(){
 			expect(results).to.equal("H");
 		});
 	});
+
+	describe("#numberAsString()", function(){
+		it("should return a number as a string", function(){
+			var results = myTests.numberAsString(5);
+			expect(results).to.equal("5");
+		});
+	});
 });
