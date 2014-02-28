@@ -33,4 +33,11 @@ describe("Passing Tests", function(){
 			assert.isNumber(results,"Number received!");
 		});
 	});
+
+	describe("#halve()", function(){
+		it("should return a smaller positive number", function(){
+			var results = myTests.halve(50);
+			expect(results).to.be.below(50);
+		});
+	});
 });
