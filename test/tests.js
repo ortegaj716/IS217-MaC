@@ -27,4 +27,10 @@ describe("Passing Tests", function(){
 		});
 	});
 
+	describe("#power()", function(){
+		it("should return a number", function(){
+			var results = myTests.power(8);
+			assert.isNumber(results,"Number received!");
+		});
+	});
 });
